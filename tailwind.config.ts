@@ -12,7 +12,10 @@ const config: Config = {
       backgroundImage: {
       'home-sm': 'url("/assets/home/background-home-mobile.jpg")',
       'home-md': 'url("/assets/home/background-home-tablet.jpg")',
-      'home-lg': 'url("/assets/home/background-home-desktop.jpg")'
+      'home-lg': 'url("/assets/home/background-home-desktop.jpg")',
+      'destination-sm': 'url("/assets/destination/background-destination-mobile.jpg")',
+      'destination-md': 'url("/assets/destination/background-destination-tablet.jpg")',
+      'destination-lg': 'url("/assets/destination/background-destination-desktop.jpg")',
       },
       fontFamily: {
         'barlow-condensed': ['Barlow Condensed'],
