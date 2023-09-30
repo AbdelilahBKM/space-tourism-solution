@@ -1,3 +1,4 @@
+import { url } from 'inspector'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -9,10 +10,21 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      'home-sm': 'url("/assets/home/background-home-mobile.jpg")',
+      'home-md': 'url("/assets/home/background-home-tablet.jpg")',
+      'home-lg': 'url("/assets/home/background-home-desktop.jpg")'
       },
+      fontFamily: {
+        'barlow-condensed': ['Barlow Condensed'],
+        'bellefair': ['Bellefair', 'serif']
+      },
+      colors: {
+        primary: '#FFF',
+        secondary: '#D0D6F9'
+      },
+      fontSize: {
+        'paragraph': '18'
+      }
     },
   },
   plugins: [],
