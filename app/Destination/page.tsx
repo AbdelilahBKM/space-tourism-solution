@@ -4,15 +4,11 @@ import Destinations from "@/components/Destination"
 const url = process.env.API_URL
 
 async function getDestinations() : Promise<IDestination[]> {
-    try {
         const data = await fetch(url + 'destinations')
         if(!data.ok){
             throw new Error('fetch faild: ' + data.status)
         }
         return await data.json()
-    } catch (err){
-        console.error('error in fetching destination:', err)
-    }
 }
 
 export default async function DestinationsPage(){
