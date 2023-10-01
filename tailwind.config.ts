@@ -16,6 +16,12 @@ const config: Config = {
       'destination-sm': 'url("/assets/destination/background-destination-mobile.jpg")',
       'destination-md': 'url("/assets/destination/background-destination-tablet.jpg")',
       'destination-lg': 'url("/assets/destination/background-destination-desktop.jpg")',
+      'crew-sm': 'url("/assets/crew/background-crew-mobile.jpg")',
+      'crew-md': 'url("/assets/crew/background-crew-tablet.jpg")',
+      'crew-lg': 'url("/assets/crew/background-crew-desktop.jpg")',
+      'technology-sm': 'url("/assets/technology/background-technology-mobile.jpg")',
+      'technology-md': 'url("/assets/technology/background-technology-tablet.jpg")',
+      'technology-lg': 'url("/assets/technology/background-technology-desktop.jpg")',
       },
       fontFamily: {
         'barlow-condensed': ['Barlow Condensed'],

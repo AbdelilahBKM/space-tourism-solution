@@ -23,23 +23,22 @@ export default function Home() {
         transition={{"delay": .2}}
         className="text-paragraph leading-[177.778%]">Let’s face it; if you want to go to space, you might as well genuinely go to outer space   and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a  truly out of this world experience!</motion.div>
       </motion.div>
-      <motion.div 
-      className="w-[450px] h-[428px] flex items-end justify-center">
+      <div 
+      className="w-[450px] h-[450px] flex items-center justify-center absolute right-[5%]
+      bottom-[20%] ">
         <motion.div 
-        whileHover={{scale: 1.2}}
         initial={{scale: 0}}
         animate={{scale: 1}}
-        className="bg-white w-[274px] h-[274px] rounded-full flex items-center justify-center cursor-pointer">
+        whileHover={{width: 450, height: 450}}
+        className="bg-white bg-opacity-25 rounded-full flex items-center justify-center cursor-pointer">
           <Link href={'/Destination'}
-          className="text-[#0B0D17] font-bellefair text-[32px] uppercase font-normal tracking-[2px] w-full text-center">
-            <motion.p
-            whileHover={{scale: 1.2}}
-             transition={{delay:  .1}}>
+          className="bg-white z-10 text-[#0B0D17] font-bellefair text-[32px] uppercase font-normal tracking-[2px] flex items-center justify-center rounded-full w-[274px] h-[274px]">
+            <p>
             explore
-            </motion.p>
+            </p>
           </Link>
         </motion.div>
-      </motion.div>
+      </div>
     </main>
   )
 }

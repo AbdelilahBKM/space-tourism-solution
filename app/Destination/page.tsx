@@ -14,7 +14,7 @@ async function getDestinations() : Promise<IDestination[]> {
 export default async function DestinationsPage(){
     const destinations = await getDestinations()
     return(
-        <main className="bg-destination-sm md:bg-destination-md lg:bg-destination-lg absolute w-full h-screen flex items-end justify-start top-0 bg-cover bg-center px-[11.45%] text-primary">
+        <main className="bg-destination-sm md:bg-destination-md lg:bg-destination-lg absolute w-full h-screen flex items-end justify-start top-0 bg-cover bg-center  text-primary px-[11.45%]">
             <Destinations destinations={destinations} />
         </main>
     )

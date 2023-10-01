@@ -8,3 +8,22 @@ export default interface IDestination {
     distance: string,
     travel: string
 }
+
+export default interface ICrew {
+    name: string,
+    images: {
+        png: string,
+        webp: string
+    },
+    role: string,
+    bio: string
+}
+
+export default interface ITechnology {
+    name: string,
+    images: {
+        png: string,
+        webp: string
+    },
+    description: string
+}

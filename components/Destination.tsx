@@ -20,7 +20,7 @@ export default function Destinations(
             <motion.div 
             initial={{x: -600}}
             animate={{x: 0}}
-            className="absolute flex gap-7 top-[25%] left-[12%] text-[28px] font-barlow-condensed uppercase font-normal tracking-[6px]">
+            className="absolute flex gap-7 top-[20%] left-[12%] text-[28px] font-barlow-condensed uppercase font-normal tracking-[6px]">
                 <span className="font-bold opacity-25">01</span>
                 <h1>Pick your destination</h1>
             </motion.div>
@@ -39,8 +39,8 @@ export default function Destinations(
                 gap-[35px]">
                     {destinations.map((dest, index) => (
                         <div onClick={() => setCurrentPlanet(index)}
-                        className={"text-[16px] relative h-full w-fit font-normal tracking-[4px] uppercase after:absolute border-primary cursor-pointer hover:text-primary transition-colors"
-                    + (currentPlanet === index && " border-b-[3px] text-primary")}
+                        className={"text-[16px] relative h-full w-fit font-normal tracking-[4px] uppercase border-primary cursor-pointer "
+                    + (currentPlanet === index ? " border-b-[3px] text-primary" : " hover:border-b-[3px] hover:border-opacity-50")}
                          key={index}>{dest.name}</div>
                     ))}
                 </nav>
