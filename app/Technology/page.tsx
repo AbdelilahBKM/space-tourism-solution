@@ -1,8 +1,16 @@
-import ITechnology from "@/interface/globalInterface"
+import TechnoInfo from "@/components/technology"
 
 const url = process.env.API_URL
+export interface ITech {
+    name: string,
+    images: {
+        portrait: string,
+        landscape: string
+    },
+    description: string
+}
 
-async function getTechnology() : Promise<ITechnology[]> {
+async function getTechnology() : Promise<ITech[]> {
     const data = await fetch(url + 'technology')
     if(!data.ok){
         throw new Error('fetch failed: ' + data.status)
@@ -12,10 +20,10 @@ async function getTechnology() : Promise<ITechnology[]> {
 
 export default async function Crew(){
     const technology  = await getTechnology()
-    console.log(technology)
+    console.log()
     return(
-        <main className="bg-technology-sm md:bg-technology-md lg:bg-technology-lg bg-cover bg-center h-screen w-full absolute top-0 flex items-center pl-[11.45%]">
-
+        <main className="bg-technology-sm md:bg-technology-md lg:bg-technology-lg bg-cover bg-center h-screen w-full absolute top-0 flex items-end pl-[11.45%]">
+            <TechnoInfo technology={technology} />
         </main>
     )
 }

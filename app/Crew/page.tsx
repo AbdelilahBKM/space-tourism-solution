@@ -13,7 +13,6 @@ async function getCrew() : Promise<ICrew[]> {
 
 export default async function Crew(){
     const crew  = await getCrew()
-    console.log(crew)
     return(
         <main className="bg-crew-sm md:bg-crew-md lg:bg-crew-lg bg-cover bg-center h-screen w-full absolute flex items-end px-[11.45%] top-0">
             <CrewInfo crew={crew}/>

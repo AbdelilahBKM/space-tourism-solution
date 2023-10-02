@@ -60,8 +60,8 @@ export default function CrewInfo({crew} : CrewProps){
                         <div 
                         key={index}
                         onClick={() => setCurrentCrew(index)}
-                        className={" bg-white w-[15px] h-full rounded-full opacity-25 cursor-pointer hover:opacity-50 hover:duration-150 transition-all " + 
-                        (index === currentCrew && " opacity-100")}
+                        className={" bg-white w-[15px] h-full rounded-full bg-opacity-25 cursor-pointer hover:bg-opacity-50 hover:duration-150 transition-all " + 
+                        (index === currentCrew && " bg-opacity-100")}
                         ></div>
                     ))}
                 </nav>
