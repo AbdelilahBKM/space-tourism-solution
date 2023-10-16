@@ -4,13 +4,13 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <main className="absolute w-full h-screen bg-slate-600 top-0 flex items-center justify-between bg-home-sm md:bg-home-md lg:bg-home-lg bg-cover bg-center text-primary px-[11.45%]">
-      <motion.div className="flex flex-col gap-6 text-secondary w-[450px]">
+    <main className="absolute w-full h-screen bg-slate-600 top-0 flex flex-col lg:flex-row items-center lg:justify-between md:justify-start bg-home-sm md:bg-home-md lg:bg-home-lg bg-cover bg-center text-primary px-[11.45%]">
+      <motion.div className="flex flex-col items-center lg:items-start lg:gap-6 md:gap-0 text-secondary w-[450px] md:mt-[202px] ">
         <motion.div 
         initial={{x: -675}}
         animate={{x: 0}}
         transition={{delay: .1}}
-        className="text-[28px] font-barlow-condensed tracking-[4.72px] uppercase font-normal">
+        className="text-[20px] lg:text-[28px] font-barlow-condensed tracking-[4.72px] uppercase font-normal">
           so, you want to travel to
         </motion.div>
         <motion.div 
@@ -21,11 +21,11 @@ export default function Home() {
         initial={{x: -675}}
         animate={{x: 0}}
         transition={{"delay": .2}}
-        className="text-paragraph leading-[177.778%]">Let’s face it; if you want to go to space, you might as well genuinely go to outer space   and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a  truly out of this world experience!</motion.div>
+        className="text-[16px] lg:text-paragraph text-center lg:text-start leading-[177.778%]">Let’s face it; if you want to go to space, you might as well genuinely go to outer space   and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a  truly out of this world experience!</motion.div>
       </motion.div>
       <div 
-      className="w-[450px] h-[450px] flex items-center justify-center absolute right-[5%]
-      bottom-[20%] ">
+      className="w-[450px] h-[450px] flex items-center justify-center lg:absolute lg:right-[5%]
+      lg:bottom-[20%] ">
         <motion.div 
         initial={{scale: 0}}
         animate={{scale: 1}}

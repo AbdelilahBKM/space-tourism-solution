@@ -11,29 +11,29 @@ export default function PlanetDescription ({planet}: PlanetProps) {
           {planet && (
             <>
             <motion.div
-              key={planet.name} // Use a unique key for each planet
+              key={planet.name} 
               initial={{ y: -375 }}
               animate={{ y: 0 }}
-              exit={{ y: -375 }} // Exit animation when a new planet is selected
+              exit={{ y: -375 }} 
               transition={{ delay: 0.02 }}
-              className="text-primary font-bellefair text-[100px] font-normal uppercase h-[115px] w-fit py-0"
+              className="text-primary font-bellefair text-[90px] lg:text-[100px] font-normal uppercase h-[92px] lg:h-[115px] py-0 text-center lg:text-start"
               >
               {planet.name}
             </motion.div>
             <motion.div 
-            className="text-secondary text-[18px] leading-8 mt-2">
+            className="text-secondary text-[16px] lg:text-[18px] leading-7 lg:leading-8 mt-2 text-center lg:text-start">
                 {planet.description}
             </motion.div>
-            <div className="w-full h-[1px] bg-[#383B4B] mt-[75px] "></div>
-            <div className="flex items-center gap-[79px] w-full text-secondary mt-[28px]">
+            <div className="w-full h-[1px] bg-[#383B4B] mt-[49px] lg:mt-[75px] "></div>
+            <div className="flex items-center justify-center gap-[79px] w-full text-secondary mt-[28px]">
                 <div className="flex flex-col gap-3">
                     <p className="font-barlow-condensed text-[14px] uppercase   leading-normal tracking-[2.5px]"
                     >AVG. DISTANCE</p>
                     <motion.p 
-                    key={planet.name} // Use a unique key for each planet
+                    key={planet.name} 
                     initial={{ y: -50 }}
                     animate={{ y: 0 }}
-                    exit={{ y: -50 }} // Exit animation when a new planet is selected
+                    exit={{ y: -50 }} 
                     className="text-primary text-[28px] font-bellefair font-normal uppercase overflow-hidden"
                     >{planet.distance}</motion.p>
                 </div>
@@ -41,10 +41,10 @@ export default function PlanetDescription ({planet}: PlanetProps) {
                     <p className="font-barlow-condensed text-[14px] uppercase   leading-normal tracking-[2.5px]"
                     >Est. travel time</p>
                     <motion.p 
-                    key={planet.name} // Use a unique key for each planet
+                    key={planet.name} 
                     initial={{ y: -50 }}
                     animate={{ y: 0 }}
-                    exit={{ y: -50 }} // Exit animation when a new planet is selected
+                    exit={{ y: -50 }} 
                     className="text-primary text-[28px] font-bellefair   font-normal uppercase overflow-hidden"
                     >{planet.travel}</motion.p>
                 </div>
