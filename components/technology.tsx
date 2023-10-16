@@ -25,6 +25,7 @@ export default function TechnoInfo({technology} : TechnologyProps){
                 <nav className="flex flex-row lg:flex-col lg:h-[470px] items-start gap-[53px]">
                     {technology.map((_, index) => (
                         <div  
+                        key={index}
                         onClick={() => setCurrentTech(index)}
                         className={"w-[80px] h-[80px] border-white border rounded-full flex items-center justify-center font-bellefair text-[32px] text-center font-normal cursor-pointer border-opacity-25 " + (currentTech === index ? " bg-white text-[#0B0D17]" : " hover:border-opacity-100 transition-colors")}
                         >{index + 1}</div>
