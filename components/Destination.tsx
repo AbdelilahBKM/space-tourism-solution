@@ -30,11 +30,11 @@ export default function Destinations(
                     initial={{scale: 0}}
                     animate={{scale: 1}}
                     className="w-[445px] h-[445px] md:flex md:items-center md:justify-center">
-                    <Image src={'/' + destinations[currentPlanet].images.webp} 
+                    <Image src={destinations[currentPlanet].images.webp} 
                     width={445} height={445} alt="moon"
                     className="hidden lg:flex w-[445px] h-[445px]"
                     />
-                    <Image src={'/' + destinations[currentPlanet].images.png} 
+                    <Image src={destinations[currentPlanet].images.png} 
                     width={445} height={445} alt="moon"
                     className="flex lg:hidden w-[333.75px] h-[333.75px]"
                     />

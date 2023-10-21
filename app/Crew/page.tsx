@@ -4,7 +4,7 @@ import ICrew from "@/interface/globalInterface"
 const url = process.env.API_URL
 
 async function getCrew() : Promise<ICrew[]> {
-    const data = await fetch(url + 'crew')
+    const data = await fetch(url + 'crew',  { cache: 'no-store' })
     if(!data.ok){
         throw new Error('fetch failed: ' + data.status)
     }

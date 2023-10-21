@@ -18,12 +18,3 @@ export default interface ICrew {
     role: string,
     bio: string
 }
-
-export default interface ITechnology {
-    name: string,
-    images: {
-        png: string,
-        webp: string
-    },
-    description: string
-}

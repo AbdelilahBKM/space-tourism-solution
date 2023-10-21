@@ -51,8 +51,8 @@ export default function TechnoInfo({technology} : TechnologyProps){
             initial={{opacity: 0}}
             animate={{opacity: 1}}
              className="w-full lg:w-[552px] flex items-start justify-end py-10">
-                    <Image src={'/'+ technology[currentTech].images.portrait} width={515} height={527} alt={technology[currentTech].name} className="hidden lg:block w-[675px] h-[527px]" />
-                    <Image src={'/'+ technology[currentTech].images.landscape} width={515} height={527} alt={technology[currentTech].name} className="block lg:hidden w-full mt-[112px]" />
+                    <Image src={technology[currentTech].images.portrait} width={515} height={527} alt={technology[currentTech].name} className="hidden lg:block w-[675px] h-[527px]" />
+                    <Image src={technology[currentTech].images.landscape} width={515} height={527} alt={technology[currentTech].name} className="block lg:hidden w-full mt-[112px]" />
             </motion.div>
         </main>
     )

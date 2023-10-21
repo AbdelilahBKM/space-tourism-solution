@@ -39,9 +39,9 @@ export default function CrewInfo({crew} : CrewProps){
             animate={{opacity: 1}}
             className=" h-full w-[615] flex justify-center items-end">
                 {/* large screen */}
-                <Image src={'/' + crew[currentCrew].images.webp} width={514} height={700} alt={crew[currentCrew].name} className="w-full h-full hidden lg:flex"/>
+                <Image src={crew[currentCrew].images.webp} width={514} height={700} alt={crew[currentCrew].name} className="w-full h-full hidden lg:flex"/>
                 {/* medium screen */}
-                <Image src={'/' + crew[currentCrew].images.png} width={456} height={700} alt={crew[currentCrew].name} className="w-[456.372px] h-auto hidden md:flex lg:hidden"/>
+                <Image src={crew[currentCrew].images.png} width={456} height={700} alt={crew[currentCrew].name} className="w-[456.372px] h-auto hidden md:flex lg:hidden"/>
             </motion.div>
 
             <div className="flex flex-col items-center lg:justify-start h-full relative md:mt-[200px] lg:mt-auto lg:py-[106px]">

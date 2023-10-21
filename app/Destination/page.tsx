@@ -4,7 +4,7 @@ import Destinations from "@/components/Destination"
 const url = process.env.API_URL
 
 async function getDestinations() : Promise<IDestination[]> {
-        const data = await fetch(url + 'destinations')
+        const data = await fetch(url + 'destinations',  { cache: 'no-store' })
         if(!data.ok){
             throw new Error('fetch faild: ' + data.status)
         }

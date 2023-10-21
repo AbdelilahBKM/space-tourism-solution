@@ -11,7 +11,7 @@ export interface ITech {
 }
 
 async function getTechnology() : Promise<ITech[]> {
-    const data = await fetch(url + 'technology')
+    const data = await fetch(url + 'technology',  { cache: 'no-store' })
     if(!data.ok){
         throw new Error('fetch failed: ' + data.status)
     }
