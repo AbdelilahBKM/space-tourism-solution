@@ -16,7 +16,7 @@ export default function Destinations(
     ){
     const [currentPlanet, setCurrentPlanet] = useState(0)
     return (
-        <main className="h-full lg:h-[75%] w-full flex flex-col md:items-center lg:flex-row md:justify-end md:py-[63px]">
+        <main className="h-full lg:h-[75%] w-full flex flex-col md:items-center lg:flex-row md:justify-end md:py-[63px] lg:py-0">
             <motion.div 
             initial={{x: -600}}
             animate={{x: 0}}
