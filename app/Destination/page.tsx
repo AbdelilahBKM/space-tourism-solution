@@ -1,14 +1,14 @@
-import IDestination from "@/interface/globalInterface"
+import IDestination from "@/utils/globalInterface"
 import Destinations from "@/components/Destination"
 
 const url = process.env.API_URL
 
 async function getDestinations() : Promise<IDestination[]> {
-        const data = await fetch(url + 'destinations',  { cache: 'no-store' })
+        const data = await fetch(url + 'destinations')
         if(!data.ok){
             throw new Error('fetch faild: ' + data.status)
         }
-        return await data.json()
+        return data.json()
 }
 
 export default async function DestinationsPage(){

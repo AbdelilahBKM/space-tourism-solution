@@ -1,8 +1,9 @@
 "use client"
-import ICrew from "@/interface/globalInterface"
+import ICrew from '@/utils/globalInterface'
 import {motion} from "framer-motion"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import Image from "next/image"
+
 
 interface CrewProps{
     crew: ICrew[]
@@ -19,10 +20,6 @@ export default function CrewInfo({crew} : CrewProps){
         const interval = setInterval(incrementCrew, 5000)
         return () => clearInterval(interval);
     }, [crew])
-    
-    const handleCrewSelect = (index: number) => {
-
-    }
     return(
         <main className="h-full lg:h-[75%] w-full justify-between flex flex-col-reverse lg:flex-row-reverse text-primary">
             <motion.div 

@@ -1,5 +1,5 @@
 "use client"
-import IDestination from "@/interface/globalInterface";
+import IDestination from "@/utils/globalInterface";
 import {AnimatePresence, motion} from "framer-motion"
 interface PlanetProps {
     planet: IDestination

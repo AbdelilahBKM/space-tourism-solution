@@ -1,14 +1,14 @@
 import CrewInfo from "@/components/Crew"
-import ICrew from "@/interface/globalInterface"
+import ICrew from "@/utils/globalInterface"
 
 const url = process.env.API_URL
 
 async function getCrew() : Promise<ICrew[]> {
-    const data = await fetch(url + 'crew',  { cache: 'no-store' })
+    const data = await fetch(url + 'crew')
     if(!data.ok){
         throw new Error('fetch failed: ' + data.status)
     }
-    return await data.json()
+    return data.json()
 }
 
 export default async function Crew(){

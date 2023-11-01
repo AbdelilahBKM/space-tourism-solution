@@ -11,11 +11,11 @@ export interface ITech {
 }
 
 async function getTechnology() : Promise<ITech[]> {
-    const data = await fetch(url + 'technology',  { cache: 'no-store' })
+    const data = await fetch(url + 'technology')
     if(!data.ok){
         throw new Error('fetch failed: ' + data.status)
     }
-    return await data.json()
+    return data.json()
 }
 
 export default async function Crew(){

@@ -1,9 +1,10 @@
 "use client"
-import IDestination from "@/interface/globalInterface"
+import IDestination from "@/utils/globalInterface"
 import  {motion} from "framer-motion"
 import Image from "next/image"
 import PlanetDescription from "./PlanetDescription"
 import { useState } from "react"
+
 
 interface destinationsProps {
     destinations: IDestination[]
